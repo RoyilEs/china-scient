@@ -6,6 +6,7 @@ import TheWelcome from "@/components/theWelcome.vue";
 
 <template>
     <scient></scient>
+
 </template>
 
 <style scoped>
