@@ -1,5 +1,8 @@
 <template>
-  <div ref="chart" style="width: 600px; height: 400px;"></div>
+  <div class="container">
+    <div ref="chart" style="width: 600px; height: 400px;"></div>
+  </div>
+
 </template>
 
 <script>
@@ -44,3 +47,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+ .container {
+   display: grid;
+   gap: 30px;
+   max-width: 1200px;
+   margin: 70px auto;
+   padding: 0 20px;
+ }
+</style>

@@ -37,23 +37,39 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="container" v-if="selectedItem">
-    <div class="card">
-      <div class="content">
-        <h2>{{ selectedItem.name }}</h2>
-        <p>{{ selectedItem.description }}</p>
-      </div>
-      <div class="image">
-        <img :src= 'selectedItem.image' alt="2" />
+  <div class="main">
+    <div class="container" v-if="selectedItem">
+      <div class="card">
+        <div class="content">
+          <h2>{{ selectedItem.name }}</h2>
+          <p>{{ selectedItem.description }}</p>
+        </div>
+        <div class="image">
+          <img :src= 'selectedItem.image' alt="2" />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="nav-container">
-    <the-welcome></the-welcome>
+    <div class="nav-container">
+      <the-welcome></the-welcome>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1499750310107-5fef28a66643') center/cover no-repeat;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  width: 100%; /* 确保宽度与父容器一致 */
+  height: 750px;
+  max-width: 100%; /* 防止超出父容器宽度 */
+  box-sizing: border-box; /* 确保 padding 不会增加总宽度 */
+}
 
 .container .card {
   position: relative;
