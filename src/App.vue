@@ -1,10 +1,14 @@
 <script setup>
 
 import Home from "@/views/home.vue";
+import ChinaMap from "@/views/chinaMap.vue";
+import Map from "@/views/map.vue"
 </script>
 
 <template>
   <home></home>
+  <china-map></china-map>
+  <Map></Map>
 </template>
 
 <style scoped>

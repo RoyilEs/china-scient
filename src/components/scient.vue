@@ -48,7 +48,6 @@ onMounted(() => {
       </div>
     </div>
   </div>
-  <!-- 右侧导航栏 -->
   <div class="nav-container">
     <the-welcome></the-welcome>
   </div>
